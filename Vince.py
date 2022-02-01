@@ -71,3 +71,16 @@ def VBtNyertAmikorXYDobogósLett(lista, ország):
             if i.ev == j and i.helyezes == 1:
                 temp2.append((i.orszag, i.ev))
     return temp2
+
+def feladat_50(lista):
+    return VBtNyertAmikorXYDobogósLett(lista, "Magyarország")
+
+# 51)	Melyik csapat nyerte a vb-t, amikor Brazília dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!
+
+def feladat_51(lista):
+    return VBtNyertAmikorXYDobogósLett(lista, "Brazília")
+
+# 52)	Melyik csapat nyerte a vb-t, amikor Argentína dobogós helyzést ért el? A győzetes csapatok neve mellett az évszámot is írja ki!
+
+def feladat_52(lista):
+    return VBtNyertAmikorXYDobogósLett(lista, "Argentína")
