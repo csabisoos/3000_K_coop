@@ -48,3 +48,8 @@ def feladat_46(lista):
 def feladat_47(lista):
     return IttNyertCsapatok(lista, "Brazília")
 
+# 48)	Melyik csapatok nyertek az Egyesült Államok rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!
+
+def feladat_48(lista):
+    return IttNyertCsapatok(lista, "Egyesült Államok")
+
