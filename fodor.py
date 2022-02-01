@@ -35,7 +35,7 @@ print("5.Feladat")
 feladat_1_6(Csapat.lista, "Mongolia")
 print("----------------------------------------------------------------")
 print("6.Feladat")
-#feladat_1_6(Csapat.lista, "READLINE")
+feladat_1_6(Csapat.lista, input("Adj meg egy csapatnevet: "))
 
 def feladat_7_12(lista, évtized):
     for elem in lista:
@@ -86,7 +86,7 @@ print("17.Feladat")
 feladat_13_18(Csapat.lista, "Mongólia")
 print("----------------------------------------------------------------")
 print("18.Feladat")
-#feladat_13_18(Csapat.lista, "READLINE")
+feladat_13_18(Csapat.lista, input("Adj meg egy csapatnevet: "))
 
 def feladat_19_23(lista, év):
     for elem in lista:
