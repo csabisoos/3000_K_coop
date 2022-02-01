@@ -22,10 +22,19 @@ def feladat_43(lista):
 
 # 44)	Melyik csapatok nyertek az Angiában rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!
 
-def feladat_44(lista):
+def IttNyertCsapatok(lista, ország):
     temp = []
     for i in lista:
-        if i.helyszín == "Anglia":
+        if i.helyszín == ország:
             temp.append((i.helyszín, i.ev))
     return temp
+
+def feladat_44(lista):
+    return IttNyertCsapatok(lista, "anglia")
+    
+
+# 45)	Melyik csapatok nyertek a Magyarországon rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!
+
+def feladat_45(lista):
+    return IttNyertCsapatok(lista, "Magyarország")
 
