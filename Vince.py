@@ -38,3 +38,8 @@ def feladat_44(lista):
 def feladat_45(lista):
     return IttNyertCsapatok(lista, "Magyarország")
 
+# 46)	Melyik csapatok nyertek a Németországban rendezett vb-ken? A csapatok neve mellett az évszámot is írja ki!
+
+def feladat_46(lista):
+    return IttNyertCsapatok(lista, "Németország")
+
