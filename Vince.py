@@ -1,7 +1,7 @@
 # 42)	A program olvasson be egy csapat nevet és írja ki, a csapat vb-n elért legjobb helyezését!
 
 def feladat_42(lista):
-    temp = input()
+    temp = input("Adjon meg egy csapat nevet: ")
     temp2 = 100
     for i in lista:
         if i.orszag == temp:
@@ -12,7 +12,7 @@ def feladat_42(lista):
 # 43)	A program olvasson be egy csapat nevet és írja ki, a csapat hányszor nyert vb-t!
 
 def feladat_43(lista):
-    temp = input()
+    temp = input("Adjon meg egy csapat nevet: ")
     temp2 = 0
     for i in lista:
         if i.orszag == temp:
@@ -53,3 +53,7 @@ def feladat_47(lista):
 def feladat_48(lista):
     return IttNyertCsapatok(lista, "Egyesült Államok")
 
+# 49)	A program olvasson be egy ország nevet és írja ki, melyik csapatok nyertek az adott helyszínen! A csapatok neve mellett az évszámot is írja ki!
+
+def feladat_49(lista):
+    return IttNyertCsapatok(lista, input("Adjon meg egy ország nevet: "))
