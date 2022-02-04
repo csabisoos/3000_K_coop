@@ -122,3 +122,22 @@ def feladat_41(lista):
         if elem.orszag == "Mongólia" and elem.helyezes < x:
             x = elem.helyezes
     return x
+
+print(feladat_24(Csapat.lista))
+print(feladat_25(Csapat.lista))
+print(feladat_26(Csapat.lista))
+print(feladat_27(Csapat.lista))
+print(feladat_28(Csapat.lista))
+print(feladat_29(Csapat.lista))
+print(feladat_30(Csapat.lista))
+print(feladat_31(Csapat.lista))
+print(feladat_32(Csapat.lista))
+print(feladat_33(Csapat.lista))
+print(feladat_34(Csapat.lista))
+print(feladat_35(Csapat.lista))
+print(feladat_36(Csapat.lista))
+print(feladat_37(Csapat.lista))
+print(feladat_38(Csapat.lista))
+print(feladat_39(Csapat.lista))
+print(feladat_40(Csapat.lista))
+print(feladat_41(Csapat.lista))
