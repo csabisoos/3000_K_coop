@@ -84,3 +84,40 @@ def feladat_51(lista):
 
 def feladat_52(lista):
     return VBtNyertAmikorXYDobogósLett(lista, "Argentína")
+
+# 53)	Kikkel játszott döntőt Magyarország? Az ellenfél csapat neve mellett az évszámot is írja ki!
+
+def DöntőtJátszott(lista, ország):
+    temp = []
+    temp2 = []
+    for i in lista:
+        if i.orszag == ország and i.helyezes <=2 and not temp.contains(i.ev):
+            temp.append(i.ev)
+    for i in lista:
+        for j in temp:
+            if i.orszag != ország and i.ev == j and i.helyezes <=2:
+                temp2.append((i.orszag, i.ev))
+    return temp2
+
+def feladat_53(lista):
+    return DöntőtJátszott(lista, "Magyarország")
+
+# 54)	Kikkel játszott döntőt Mongólia? Az ellenfél csapat neve mellett az évszámot is írja ki!
+
+def feladat_54(lista):
+    return DöntőtJátszott(lista, "Mongólia")
+
+# 55)	Kikkel játszott döntőt Svájc? Az ellenfél csapat neve mellett az évszámot is írja ki!
+
+def feladat_55(lista):
+    return DöntőtJátszott(lista, "Svájc")
+
+# 56)	Kikkel játszott döntőt Barzília? Az ellenfél csapat neve mellett az évszámot is írja ki!
+
+def feladat_56(lista):
+    return DöntőtJátszott(lista, "Barzília")
+
+# 57)	A program olvasson be egy ország nevet és írja ki, kikkel játszott döntőt az illető csapat? Az ellenfél csapat neve mellett az évszámot is írja ki!
+
+def feladat_57(lista):
+    return DöntőtJátszott(lista, input("Adjon meg egy országnevet: "))
